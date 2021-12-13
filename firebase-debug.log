@@ -1,0 +1,28 @@
+[debug] [2021-12-13T17:33:56.148Z] ----------------------------------------------------------------------
+[debug] [2021-12-13T17:33:56.150Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ashish Kushaj\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-12-13T17:33:56.150Z] CLI Version:   9.23.1
+[debug] [2021-12-13T17:33:56.150Z] Platform:      win32
+[debug] [2021-12-13T17:33:56.150Z] Node Version:  v14.18.1
+[debug] [2021-12-13T17:33:56.151Z] Time:          Mon Dec 13 2021 23:03:56 GMT+0530 (India Standard Time)
+[debug] [2021-12-13T17:33:56.151Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-12-13T17:33:56.199Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-13T17:33:56.199Z] > authorizing via signed-in user (ashishkushajak@gmail.com)
+[debug] [2021-12-13T17:33:56.199Z] [iam] checking project react-project-1-birthday for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-12-13T17:33:56.201Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-project-1-birthday:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-12-13T17:34:00.405Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 13 Dec 2021 17:34:01 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1359","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-13T17:34:00.406Z] > refreshing access token with scopes: []
+[debug] [2021-12-13T17:34:00.407Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-13T17:34:00.886Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Mon, 13 Dec 2021 17:34:02 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-13T17:34:00.894Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-project-1-birthday [none]
+[debug] [2021-12-13T17:34:01.934Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-project-1-birthday 200
+[debug] [2021-12-13T17:34:01.934Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-project-1-birthday {"projectId":"react-project-1-birthday","projectNumber":"377303986343","displayName":"react-project-1-birthday","name":"projects/react-project-1-birthday","resources":{"hostingSite":"react-project-1-birthday"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'react-project-1-birthday'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-12-13T17:34:01.937Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-12-13T17:34:01.937Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
