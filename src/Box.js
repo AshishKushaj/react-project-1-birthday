@@ -4,11 +4,12 @@ import data from './data';
 
 function Box(){
     const [list, setList]=useState(data);
+    const [n,setN]= useState(5);
 
     return(
         <div className="Box bs-shadow-5 ">
 
-            <h2 className="heading">5 buddaay today</h2>
+            <h2 className="heading">{n} buddaay today</h2>
 
             <List list={list}/>
 
@@ -16,7 +17,10 @@ function Box(){
             <button className="button" 
 
                 onClick={
-                    ()=> setList([])
+                    ()=> {
+                        setList([])
+                        setN(0)
+                    }
                 }
                 
             >CLEAR</button>
